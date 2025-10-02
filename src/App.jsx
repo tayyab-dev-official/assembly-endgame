@@ -13,6 +13,23 @@ import { languages } from "./js/languages";
 export default function App() {
   const [word, setWord] = useState("");
   const [guessedLetters, setGuessedLetters] = useState([]);
+  const [windowDimensions, setWindowDimensions] = useState({
+    width: typeof window !== 'undefined' ? window.innerWidth : 1200,
+    height: typeof window !== 'undefined' ? window.innerHeight : 800
+  });
+
+  // Update window dimensions on resize for confetti
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const isNewGame = guessedLetters.length === 0;
   const isGuessed = guessedLetters.length > 0;
@@ -56,7 +73,15 @@ export default function App() {
 
   return (
     <main>
-      {isGameWon && <Confetti />}
+      {isGameWon && (
+        <Confetti 
+          width={windowDimensions.width}
+          height={windowDimensions.height}
+          recycle={false}
+          numberOfPieces={300}
+          gravity={0.1}
+        />
+      )}
 
       <Header />
       
