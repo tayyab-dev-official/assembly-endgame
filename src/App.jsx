@@ -6,7 +6,7 @@ import Confetti from 'react-confetti'
 import Header from "./components/Header";
 import Languages from "./components/Languages";
 import Word from "./components/Word";
-import Keyboard from "./components/Keyboard.Jsx";
+import Keyboard from "./components/Keyboard";
 import Farewell from "./components/Farewell";
 import { languages } from "./js/languages";
 
