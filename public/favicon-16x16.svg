@@ -1,0 +1,18 @@
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="16" height="16" fill="#282726" rx="2"/>
+  
+  <!-- Computer screen -->
+  <rect x="2" y="3" width="12" height="8" fill="#f9f4da" stroke="#323232" stroke-width="0.5" rx="1"/>
+  <rect x="3" y="4" width="10" height="5" fill="#323232"/>
+  
+  <!-- Code lines -->
+  <line x1="4" y1="5" x2="7" y2="5" stroke="#4caf50" stroke-width="0.5"/>
+  <line x1="4" y1="6" x2="6" y2="6" stroke="#fcba29" stroke-width="0.5"/>
+  <line x1="4" y1="7" x2="8" y2="7" stroke="#f44336" stroke-width="0.5"/>
+  <line x1="4" y1="8" x2="5" y2="8" stroke="#4caf50" stroke-width="0.5"/>
+  
+  <!-- Stand -->
+  <rect x="7" y="11" width="2" height="2" fill="#f9f4da"/>
+  <rect x="5" y="13" width="6" height="1" fill="#f9f4da"/>
+</svg>

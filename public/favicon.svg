@@ -1,0 +1,18 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#282726" rx="4"/>
+  
+  <!-- Computer/Assembly icon -->
+  <rect x="4" y="8" width="24" height="16" fill="#f9f4da" stroke="#323232" stroke-width="1" rx="2"/>
+  <rect x="6" y="10" width="20" height="10" fill="#323232"/>
+  
+  <!-- Code lines -->
+  <line x1="8" y1="12" x2="14" y2="12" stroke="#4caf50" stroke-width="1"/>
+  <line x1="8" y1="14" x2="12" y2="14" stroke="#fcba29" stroke-width="1"/>
+  <line x1="8" y1="16" x2="16" y2="16" stroke="#f44336" stroke-width="1"/>
+  <line x1="8" y1="18" x2="10" y2="18" stroke="#4caf50" stroke-width="1"/>
+  
+  <!-- Stand -->
+  <rect x="14" y="24" width="4" height="4" fill="#f9f4da"/>
+  <rect x="10" y="28" width="12" height="2" fill="#f9f4da" rx="1"/>
+</svg>
