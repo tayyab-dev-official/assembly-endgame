@@ -1,7 +1,6 @@
 import clsx from "clsx";
 
 function Word(props) {
-  console.log(props);
   return (
     <section className="word">
       {props.word.split("").map((letter) => {
