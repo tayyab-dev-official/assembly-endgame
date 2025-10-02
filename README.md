@@ -7,7 +7,7 @@ A high-performance programming language-themed word guessing game built with Rea
 1. **Start the Game**: A random programming language name is selected
 2. **Select Characters**: Click on individual characters/letters to guess if they're in the programming language name
 3. **Track Progress**: Correct characters are revealed in their positions, incorrect ones are tracked
-4. **Win or Lose**: 
+4. **Win or Lose**:
    - **Win**: Guess all characters in the programming language name before making too many mistakes
    - **Lose**: Make more than 7 incorrect guesses
 5. **Play Again**: Start a new round with a different language
@@ -16,11 +16,12 @@ A high-performance programming language-themed word guessing game built with Rea
 
 ## 🎯 About
 
-**Professional React Application** showcasing modern frontend development practices. Assembly Endgame is an interactive word game where players guess programming language names by selecting individual characters. 
+**Professional React Application** showcasing modern frontend development practices. Assembly Endgame is an interactive word game where players guess programming language names by selecting individual characters.
 
 **Key Achievements:**
+
 - 🚀 **Performance**: Optimized React components achieving sub-100ms render times
-- 📱 **Responsive Design**: 100% mobile compatibility across iOS/Android devices  
+- 📱 **Responsive Design**: 100% mobile compatibility across iOS/Android devices
 - 🎨 **UX Excellence**: Implemented 5+ interactive animations with smooth 60fps performance
 - ⚡ **State Management**: Efficient React hooks implementation reducing re-renders by 40%
 - 🔧 **Code Quality**: Clean, maintainable codebase with consistent naming conventions
@@ -39,17 +40,20 @@ A high-performance programming language-themed word guessing game built with Rea
 ## 🛠️ Technical Stack & Architecture
 
 **Frontend Technologies:**
+
 - **React 19**: Latest features including concurrent rendering and automatic batching
 - **Vite**: Lightning-fast build tool with HMR (Hot Module Replacement)
 - **Modern CSS3**: Flexbox, Grid, and CSS custom properties for responsive design
 - **JavaScript ES6+**: Arrow functions, destructuring, and modern syntax
 
 **Performance & UX:**
+
 - **React Confetti**: Optimized particle system for celebration animations
 - **clsx**: Conditional CSS class management for dynamic styling
 - **Component Architecture**: Modular design with 90%+ code reusability
 
 **Development Workflow:**
+
 - **ESLint**: Code quality enforcement with 0 linting errors
 - **Git Version Control**: Structured commit history with semantic versioning
 - **Responsive Testing**: Cross-browser compatibility (Chrome, Firefox, Safari, Edge)
@@ -64,23 +68,25 @@ A high-performance programming language-themed word guessing game built with Rea
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/assembly-endgame.git
    cd assembly-endgame
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Start the development server:
+
    ```bash
    npm run dev
    ```
 
 4. Open your browser and navigate to `http://localhost:5173`
-
 
 ## 📂 Project Structure
 
@@ -123,7 +129,7 @@ src/
 **Open to professional collaboration and code reviews.** This project welcomes:
 
 - 🔍 **Code Reviews**: Architecture feedback and optimization suggestions
-- 🚀 **Feature Enhancements**: New game modes, difficulty levels, or UI improvements  
+- 🚀 **Feature Enhancements**: New game modes, difficulty levels, or UI improvements
 - 🐛 **Bug Reports**: Issue identification with detailed reproduction steps
 - 📚 **Documentation**: API documentation and code commenting improvements
 - 🎨 **Design Contributions**: UX/UI enhancements and accessibility improvements
@@ -139,18 +145,21 @@ This project is open source and available under the [MIT License](LICENSE).
 **This project demonstrates key industry skills:**
 
 ### Frontend Development Expertise
+
 - ✅ **React Mastery**: Component lifecycle, hooks, and modern patterns
-- ✅ **State Management**: Complex application state with multiple data flows  
+- ✅ **State Management**: Complex application state with multiple data flows
 - ✅ **Performance Optimization**: Bundle size optimization and render efficiency
 - ✅ **Responsive Design**: Mobile-first approach with CSS Grid/Flexbox
 
 ### Software Engineering Practices
+
 - ✅ **Clean Code**: Maintainable, documented, and scalable architecture
 - ✅ **Version Control**: Professional Git workflow with meaningful commits
 - ✅ **Code Organization**: Modular component structure and separation of concerns
 - ✅ **User Experience**: Accessibility and intuitive interface design
 
 ### Business Value Delivered
+
 - 🎯 **User Engagement**: Interactive learning tool for programming concepts
 - 📈 **Technical Innovation**: Modern web technologies implementation
 - 🚀 **Performance**: Fast loading times and smooth user interactions
@@ -161,6 +170,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📊 Project Metrics & Performance
 
 **Development Stats:**
+
 - **Lines of Code**: ~800+ (well-structured and documented)
 - **Components Created**: 5 reusable React components
 - **Performance Score**: 95+ Lighthouse rating
@@ -168,6 +178,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - **Mobile Responsive**: 100% functional on devices 320px-2560px wide
 
 **Technical Achievements:**
+
 - ⚡ **Load Time**: < 2 seconds initial page load
 - 🎯 **Accessibility**: WCAG 2.1 AA compliance
 - 📱 **Cross-Platform**: iOS, Android, Desktop tested
@@ -177,4 +188,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Ready for production deployment • Scalable architecture • Industry best practices**
 
-*This project showcases professional frontend development skills suitable for modern web applications.*
+_This project showcases professional frontend development skills suitable for modern web applications._
