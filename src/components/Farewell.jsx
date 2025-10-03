@@ -1,9 +1,7 @@
-import clsx from "clsx";
+// import clsx from "clsx";
 
 export default function Farewell(props) {
-
   const farewellMessage = (language) => {
-    
     const options = [
       `Farewell, ${language}`,
       `Adios, ${language}`,
@@ -23,34 +21,45 @@ export default function Farewell(props) {
     return options[optionsIndex];
   };
 
-  const className = clsx({
-    notice: true,
-    won: props.isGameWon,
-    lost: props.isGameLost,
-    farewell: !props.isNewGame,
-  });
+  const notice =
+    "text-center w-full max-w-[350px] mt-[1.25em] p-[1.25em] border-2 border-dashed border-[#323232] border-lg";
+
+  const farewell = "bg-[#7a5ea7]";
+
+  const won = "bg-green-600";
+
+  const lost = "bg-red-600";
+
+  // const className = clsx({
+  //   notice: true,
+  //   won: props.isGameWon,
+  //   lost: props.isGameLost,
+  //   farewell: !props.isNewGame,
+  // });
 
   const wonNotice = () => {
     return (
-      <div className={className}>
-        <h2>You Win</h2>
-        <p>Well done! 🍕</p>
+      <div className={notice + " " + won}>
+        <h2 className="text-4xl font-bold">You Win</h2>
+        <p className="text-medium">Well done! 🍕</p>
       </div>
     );
   };
 
   const lostNotice = () => {
     return (
-      <div className={className}>
-        <h2>Game over!</h2>
-        <p>You lose! Better start learning Assembly 😭</p>
+      <div className={notice + " " + lost}>
+        <h2 className="text-4xl font-bold">Game over!</h2>
+        <p className="text-medium">
+          You lose! Better start learning Assembly 😭
+        </p>
       </div>
     );
   };
 
   const blankNotice = () => {
     return (
-      <div className={className}>
+      <div className={notice}>
         <h2></h2>
       </div>
     );
@@ -58,22 +67,22 @@ export default function Farewell(props) {
 
   const farewellNotice = (language) => {
     return (
-      <div className={className}>
-        <h2>{farewellMessage(language)}</h2>
+      <div className={notice + " " + farewell}>
+        <h2 className="text-3xl font-bold">{farewellMessage(language)}</h2>
       </div>
     );
   };
 
-  if (props.isNewGame){
-    return blankNotice()
+  if (props.isNewGame) {
+    return blankNotice();
+  }
+
+  if (props.isGameWon) {
+    return wonNotice();
   }
 
   if (props.isGameLost) {
-    return lostNotice()
-  }
-
-  if (props.isGameWon){
-    return wonNotice()
+    return lostNotice();
   }
 
   if (!props.isLastGuessedCorrect && props.lostLanguage) {

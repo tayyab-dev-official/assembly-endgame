@@ -1,6 +1,6 @@
 // dependencies
 import { useState, useEffect } from "react";
-import Confetti from 'react-confetti'
+import Confetti from 'react-confetti';
 
 // components
 import Header from "./components/Header";
@@ -21,7 +21,7 @@ export default function App() {
     ? guessedLetters[guessedLetters.length - 1]
     : null;
   
-    const isLastGuessedCorrect = word.includes(lastGuessedLetter);
+  const isLastGuessedCorrect = word.includes(lastGuessedLetter);
 
   const isGameWon = word
     .split("")
@@ -55,11 +55,10 @@ export default function App() {
   }
 
   return (
-    <main>
+    <main className="flex flex-col items-center justify-center gap-8 w-full min-h-screen font-hankenGrotesk text-[#f9f4da] bg-[#282726] m-auto">
+      <Header />
       {isGameWon && <Confetti />}
 
-      <Header />
-      
       <Farewell
         isNewGame={isNewGame}
         isGameLost={isGameLost}
@@ -67,15 +66,15 @@ export default function App() {
         lostLanguage={lostLanguage}
         isLastGuessedCorrect={isLastGuessedCorrect}
       />
-      
+
       <Languages lostLanguages={lostLanguages} />
-      
-      <Word 
-        word={word} 
-        guessedLetters={guessedLetters} 
-        isGameOver={isGameOver} 
+
+      <Word
+        word={word}
+        guessedLetters={guessedLetters}
+        isGameOver={isGameOver}
       />
-      
+
       <Keyboard
         onClick={handleKeyboardClick}
         isGuessed={isGuessed}
@@ -85,9 +84,12 @@ export default function App() {
         word={word}
         guessedLetters={guessedLetters}
       />
-      
+
       {isGameOver && (
-        <button className="new-game-btn" onClick={startGame}>
+        <button
+          className="font-hankenGrotesk font-[700] bg-[#11b5e5] border-2 border-[#d7d7d7] rounded-md px-4 py-2 text-xl text-black cursor-pointer"
+          onClick={startGame}
+        >
           New Game
         </button>
       )}
