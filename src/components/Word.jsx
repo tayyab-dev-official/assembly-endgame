@@ -3,14 +3,14 @@ import clsx from "clsx";
 function Word(props) {
   return (
     <section className="max-w-[334px] flex">
-      {props.word.split("").map((letter) => {
+      {props.word.split("").map((letter, index) => {
         const className = clsx(
           props.isGameOver && !props.guessedLetters.includes(letter) && "text-red-600"
         );
 
         return (
           <span
-            key={letter}
+            key={index}
             className={
               className +
               " " +

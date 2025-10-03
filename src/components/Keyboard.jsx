@@ -1,51 +1,38 @@
-
-// import clsx from "clsx";
+import { useCallback } from "react";
 
 function Keyboard(props) {
-  const keyboardCharacters = getKeyboardLetters();
-
-  function getKeyboardLetters() {
-    const keyboardLetters = [];
-    for (let i = 0; i < 26; i++) {
-      keyboardLetters.push(String.fromCharCode(97 + i));
-    }
-    return keyboardLetters;
-  }
-
+  const getKeyboardLetters = useCallback(() => {
+    return Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i));
+  }, []);
   return (
     <section className="flex flex-wrap items-center justify-center gap-2 max-w-[480px] p-2 mb-2">
-      {keyboardCharacters.map((letter) => {
-
-        const isLastGuessedLetter = props.lastGuessedLetter === letter
+      {getKeyboardLetters().map((letter) => {
+        const isLastGuessedLetter = props.lastGuessedLetter === letter;
         const isGuessedLetter = props.guessedLetters.includes(letter);
-        const isWordLetter = props.word.split('').includes(letter)
+        const isWordLetter = props.word.split("").includes(letter);
 
-        const yellow = "bg-yellow-600"
-        const green = "bg-green-600"
-        const red = "bg-red-600"
+        const yellow = "bg-yellow-600";
+        const green = "bg-green-600";
+        const red = "bg-red-600";
 
-        // const name = clsx({
-        //   yellow: !isLastGuessedLetter && !isGuessedLetter,
-        //   green: isGuessedLetter && isWordLetter,
-        //   red: isGuessedLetter && !isWordLetter,
-        // });
-        let name = ""
+        let name = "";
 
         if (!isLastGuessedLetter && !isGuessedLetter) {
-          name = yellow
+          name = yellow;
         }
 
         if (isGuessedLetter && isWordLetter) {
-          name = green
+          name = green;
         }
 
         if (isGuessedLetter && !isWordLetter) {
-          name = red
+          name = red;
         }
 
         const styles = {
-          cursor: isGuessedLetter || props.isGameOver ? "not-allowed" : "pointer"
-        }
+          cursor:
+            isGuessedLetter || props.isGameOver ? "not-allowed" : "pointer",
+        };
 
         return (
           <button

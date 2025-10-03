@@ -1,6 +1,6 @@
 import { languages } from "../js/languages";
 
-function Languages(props) {
+function Languages({lostLanguages}) {
   return (
     <section className="w-[320px] flex flex-wrap items-center justify-center gap-2 p-1">
       {languages.map((language) => {
@@ -11,7 +11,7 @@ function Languages(props) {
           color: language.color,
         };
 
-        const isLost = props.lostLanguages?.includes(language);
+        const isLost = lostLanguages?.includes(language);
         const className = isLost
           ? "relative before:content-['💀'] before:absolute before:top-0 before:left-0 before:flex before:items-center before:justify-center before:w-full before:h-full before:text-base before:bg-black/70 before:rounded-sm"
           : " ";

@@ -1,15 +1,13 @@
-function Header() {
-    return (
-      <section className="text-center max-w-[350px]">
-        <h1 className="font-medium text-lg text-[#f9f4da] mb-[0.5em]">
-          Assembly: Endgame
-        </h1>
-        <p className="font-normal text-[#8e8e8e]">
-          Guess the word in under 8 attempts to keep the programming world safe
-          from Assembly!
-        </p>
-      </section>
-    );
-}
+import React from "react";
+
+const Header = React.memo(() => (
+  <header className="text-center max-w-[350px]">
+    <h1 className="font-medium text-lg text-cream mb-2">Assembly: Endgame</h1>
+    <p className="font-normal text-gray-400">
+      Guess the word in under 8 attempts to keep the programming world safe from
+      Assembly!
+    </p>
+  </header>
+));
 
 export default Header
