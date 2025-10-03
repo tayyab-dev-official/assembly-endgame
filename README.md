@@ -1,6 +1,6 @@
 # Assembly Endgame 🎮
 
-**Award-Winning Programming Language Word Game** | **98% Lighthouse Score** | **Zero Runtime Errors** | **Enterprise-Ready Architecture**
+**A production-grade interactive word guessing game** | **98% Lighthouse Score** | **Zero Runtime Errors** | **Enterprise-Ready Architecture**
 
 A production-grade interactive word guessing game demonstrating **advanced React architecture**, **custom hook patterns**, and **performance optimization**. Built with modern web technologies and deployed on Netlify with **99.9% uptime**.
 
